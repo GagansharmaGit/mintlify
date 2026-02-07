@@ -18,7 +18,7 @@ body {
     background-size: cover;
     background-position: center top;
     background-color: black;
-    font-family: "inter","inter Fallback";
+    font-family: "inter", "inter Fallback";
     user-select: none;
     background-color: black;
 }
@@ -32,7 +32,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 365.5px 0px 365.5px;
+    /* padding: 0px 365.5px 0px 365.5px; */
+    margin: 0px 204px 0px 204px;
 }
 
 .header {
@@ -53,7 +54,7 @@ body {
     display: flex;
     align-items: center;
     height: 33px;
-    padding: 0px 367.500px 0px 367.500px;
+    margin: 0px 204px 0px 204px;
 
 }
 
@@ -63,12 +64,12 @@ body {
 
 .nav-links-container {
     display: flex;
-  /* gap: 32px; */
+    /* gap: 32px; */
 }
 
 .nav-links {
     color: rgba(255, 255, 255, 0.9);
-    font-size: 16px;  
+    font-size: 16px;
     padding: 4px 12px 4px 12px;
 }
 
@@ -93,15 +94,14 @@ body {
     border-radius: 50px;
     height: 33.5px;
 }
+
 .hero-section {
-    padding: 0 367.5px;
+    /* padding: 0 367.5px; */
     background-image:
-        linear-gradient(
-            to top,
+        linear-gradient(to top,
             rgba(0, 0, 0, 0.85) 0%,
             rgba(0, 0, 0, 0.6) 35%,
-            rgba(0, 0, 0, 0.0) 65%
-        ),
+            rgba(0, 0, 0, 0.0) 65%),
         url("https://www.mintlify.com/hero/bg-dark.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -126,7 +126,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .hero-main-container {
@@ -147,12 +147,10 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.85) 0%,
-        rgba(0, 0, 0, 0.6) 35%,
-        rgba(0, 0, 0, 0) 65%
-    );
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.85) 0%,
+            rgba(0, 0, 0, 0.6) 35%,
+            rgba(0, 0, 0, 0) 65%);
     pointer-events: none;
 }
 
@@ -195,6 +193,7 @@ body {
     font-weight: 500;
     line-height: 22.5px;
 }
+
 .hero-title {
     color: lab(100 0 0);
     font-size: 64px;
@@ -249,8 +248,8 @@ body {
 
 .pill {
     color: #FFFFFF;
-    font-size: 16px;
-    padding: 4px 8px 4px 4px;
+    font-size: 13px;
+    padding: 4px 4px 4px 4px;
     border-radius: 50px;
     height: 33.5px;
     display: flex;
@@ -320,9 +319,13 @@ body {
 
 .intelligence-section {
     background-color: black;
-    margin: 0px 407.5px 144px 407.5px;
-    width: 1024px;
-    height: 1428px;
+    margin: 0px 244.4px 144px 244.4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 1024px; */
+    /* height: 1428px; */
 }
 
 .section-title {
@@ -342,14 +345,17 @@ body {
     font-size: 20px;
     font-weight: 400;
     width: 648px;
-    height:48px;
+}
+
+.intelligence-card-image {
+    border-radius: 24px;
 }
 
 .intelligence-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 20px;
     padding: 48px 32px 48px 32px;
 }
 
@@ -359,7 +365,7 @@ body {
     align-items: center;
     gap: 24px;
     justify-content: center;
-    align-items: stretch; 
+    align-items: stretch;
 }
 
 .card-title {
@@ -386,8 +392,8 @@ body {
 }
 
 .intelligence-card {
-    width: 494.9px;
-    height: 535px;
+    /* width: 494.9px; */
+    /* height: 535px; */
 
     display: flex;
     flex-direction: column;
@@ -444,6 +450,13 @@ body {
     margin-top: 25px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 24px;
+    max-width: 1024px;
+
+}
+
+.intelligence-card-image-containe {
+    min-width: 1024px;
+    max-width: 1024px;
 }
 
 .intelligence-card-2 {
@@ -452,7 +465,7 @@ body {
     gap: 16px;
     padding: 48px 32px 48px 32px;
     border-radius: 24px;
-    
+
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -463,7 +476,7 @@ body {
 }
 
 .enterprice-container {
-    margin: 0px 407.5px 0px 405.7px;
+    margin: 0px 244.4px 0px 244.4px;
 }
 
 .enterprice-card {
@@ -537,13 +550,13 @@ body {
 
 .enterprice-cards-container {
     display: flex;
-  flex-direction: row;
+    flex-direction: row;
 
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 
-  gap: 3rem;
-  padding-bottom: 3rem;
+    gap: 3rem;
+    padding-bottom: 3rem;
 }
 
 .enterprice-card-2-title {
@@ -611,7 +624,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 16px;
-    
+
 }
 
 .enterprice-card-3-link-container {
@@ -688,20 +701,20 @@ body {
 
 .knowledge-container {
     width: 100%;
-    max-width: 1024px;        
+    max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
 
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-top: 3rem;        
+    padding-top: 3rem;
     padding-bottom: 3rem;
 
-    display: flex;            
-    flex-direction: column;   
-    align-items: center;      
-    justify-content: center;  
-    gap: 1rem;                
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .knowledge-title {
@@ -716,13 +729,13 @@ body {
 }
 
 .knowledge-title-2 {
-    color:lab(100 0 0);
+    color: lab(100 0 0);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 40px;
     font-weight: 600;
     letter-spacing: -0.8px;
     line-height: 44px;
-    text-align:center;
+    text-align: center;
 }
 
 .knowledge-paragraph {
@@ -757,7 +770,7 @@ body {
 
     scroll-behavior: smooth;
 
-    scrollbar-width: none; 
+    scrollbar-width: none;
     -ms-overflow-style: none;
     border-radius: 24px;
 }
@@ -805,11 +818,9 @@ body {
     position: absolute;
     inset: 0;
 
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.75) 100%
-    );
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.75) 100%);
 
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -830,7 +841,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0px 401.500px 0px 401.500px;
+    margin: 0px 238.4px 0px 238.4px;
 }
 
 .documentation-title {
@@ -870,7 +881,7 @@ body {
     border-radius: 50px;
     background-color: lab(100 0 0);
     font-size: 16px;
-    width: 194.88px;
+    /* width: 194.88px; */
     height: 40px;
     font-family: "inter", "Fallback";
     font-weight: 500;
@@ -887,7 +898,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    width: 137px;
+    /* width: 137px; */
     font-size: 16px;
     height: 40px;
     padding: 7px 24px 7px 24px;
@@ -972,7 +983,7 @@ body {
 }
 
 .footer-container {
-    margin: 0px 408.500px 0px 408.500px;
+    margin: 0px 245.4px 0px 245.4px;
     border-left: 1px solid #19191a;
     border-right: 1px solid #19191a;
 }
@@ -992,7 +1003,7 @@ body {
 
 }
 
-.footer-box-1 > a {
+.footer-box-1>a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1000,7 +1011,7 @@ body {
 
 .footer-icons {
     display: flex;
-    margin-left: 755px;
+    margin-left: 700px;
     justify-content: space-between;
 }
 
@@ -1076,7 +1087,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between
-    
 }
 
 .footer-link-4 {

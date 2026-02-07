@@ -9,6 +9,12 @@
 </head>
 
 <body>
+    <!-- CSS-Only Alert -->
+    <input type="checkbox" id="alert-toggle" class="alert-toggle">
+    <div class="alert-banner">
+        <span>Hello</span>
+        <label for="alert-toggle" class="alert-close">&times;</label>
+    </div>
     <header class="header">
         <div class="navbar-container">
             <div class="navbar">
@@ -112,10 +118,11 @@
                 <div class="intelligence-card-content">
                     <p class="card-title">LLMs.txt & MCP</p>
                     <h3 class="card-description">Built for both people and AI</h3>
-                    <p class="card-paragraph">Ensure your product shows up in the AI workflows users already rely on. We
+                    <p class="card-paragraph">Ensure your product shows up in the AI<br> workflows users already rely
+                        on. We<br>
                         support llms.txt, MCP, and whatever comes next.</p>
                 </div>
-                <div>
+                <div class="intelligence-card-image-container">
                     <img class="intelligence-card-image" src="./assets/Screenshot from 2026-02-04 23-27-18.png" alt="">
                 </div>
             </div>
